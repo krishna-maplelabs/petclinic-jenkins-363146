@@ -8,6 +8,8 @@ metadata:
   name: {{ template "fullname" . }}
 {{- end }}
   labels:
+    snappyflow/compname: petclinic-jenkins
+    snappyflow/appname: petclinic-stage
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
   runLatest:
